@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #9c9eaf;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+   max-width: 1020px;
+   margin: 0 auto;
+   padding: 0px 10px;
+   
+}
+
+html {
+    height: 100%;
+}
+body {
+    font-family: Comfortaa,sans-serif;
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
+    
+}
+
+header {
+    background: #0d0d0e;
+    padding:  7px 0px 7px 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.gora,.faq,.price {
+    color: white;
+}
+
+.zhury {
+    background:white;
+    color: black;
+    padding: 5px 1px 5px 5px;
+    text-transform: uppercase;
+    
+}
+
+.gora {
+    text-transform: uppercase;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.cart {
+    display: flex;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.cart__img {
+    margin-right: 10px;
+}
+
+.logo {
+    margin-right: 50%;
+}
+
+.faq {
+    border: 1px solid transparent;
+    transition: .5s ease;
+}
+
+.faq:hover {
+    border-bottom: 1px solid white;
+    transition: .5s ease;
+}
+
+
+/*//////////добавить свои свг//////////////////////*/  
+
+
+
+main {
+    flex: 1 0 auto;
+}
+
+
+
+
+/*//////////добавить свои свг//////////////////////*/  
+
+footer {
+    background: #0d0d0e;
+    padding: 25px 0px 20px 0px;
+    flex: 0 0 auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left__h4 {
+    color: #888;
+    margin-bottom: 5px;
+ }
+
+ .footer-left__h5,.footer-right__p {
+    color: #bfbfbf;
+  }
+
+  .footer-left__h5 {
+    margin-bottom: 15px;
+  }
+  .instagram ,.vk {
+      margin-top: 15px;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      -ms-user-select: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+  }
+
+  /*//////////рахобраться с дублированием футера и хедера//////////////////////*/  
+
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+
+
+.accordion__summary::before {
+    content: '\25B6';
+    padding-right: 0.5em;
+}
+
+.accordion[open] > .accordion__summary::before {
+    content: '\25BC';
+    
+  }
+
+.accordion__summary {
+    text-transform: uppercase;
+    border: 2px solid;
+    cursor: pointer;
+    outline: none;
+    display: inline;
+    padding: 10px 100px 10px 10px;
+    border-radius: 100px;
+    transition: .5s ease;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+@keyframes spoiler {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.accordion {
+    margin-top: 5%;
+}
+
+.accordion:nth-child(2) {
+    margin-top: 2%;
+}
+
+details[open] div {
+    animation: spoiler 2s;
+  }
+
+ .accordion__item {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ }
+
+ .accordion__p {
+     margin-top: 5%;
+     margin-bottom: 5%;
+     font-family: sans-serif;
+ }
+
+
+ /*//////////рахобраться с дублированием футера и хедера//////////////////////*/  
+
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ .catalog__item {
+     max-width: 290px;
+     border: 1px solid;
+     /* margin-right: 50px; */
+     margin-right: 33px;
+     margin-bottom: 40px;
+     
+ }
+ h2 {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ .catalog__item:nth-child(3n) {
+     margin-right: 0;
+ }
+.catalog__item__img {
+   max-width: 240px;
+   padding: 5px 20px 5px 20px;
+   margin-left: 25px;
+}
+
+ .price-and-buy {
+     display: flex;
+     justify-content: space-between;
+     
+     align-items: center;
+ }
+.catalog__name {
+    border-top: 1px solid #000;
+    padding: 5px 0px 5px 20px;
+}
+
+ .description {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 5px 5px 5px 5px;
+   
+    
+ }
+
+ .catalog__price {
+     padding: 5px 0px 5px 20px;
+ }
+
+ .catalog__buy {
+     padding-right: 20px;
+     cursor: pointer;
+     border: none;
+     background: none;
+     outline: none;
+     border-left :1px solid;
+     padding-left: 20px;
+ }
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
